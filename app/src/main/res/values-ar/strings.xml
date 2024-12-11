@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="gb_translate">ترجمة</string>
+    <string name="done_translate">تمت الترجمة</string>
+    <string name="translate_toast">جاري الترجمة, يرجى الانتظار</string>
+    <string name="translate_to_ar">الترجمة للعربية</string>
+    <string name="translate_to_en">الترجمة للانجليزية</string>
+    <string name="translate_to_pt_rbr">الترجمة للبرتغالية</string>
+    <string name="translate_to_in">الترجمة للهندية</string>
+    <string name="translate_to_es">الترجمة للاسبانية</string>
+    <string name="translate_to_fr">الترجمة للفرنسية</string>
+    <string name="translate_to_ge">الترجمة للالمانية</string>
+    <string name="translate_to_it">الترجمة للايطالية</string>
+    <string name="translate_to_tu">الترجمة للتركية</string>
+    <string name="translate_to_fa">الترجمة للفارسية</string>
+    <string name="report">…إبلاغ</string>
+    <string name="help">مساعدة</string>
+    <string name="action_settings">الإعدادات</string>
+    <string name="about_title">حول البرنامج</string>
+    <string name="about_version">الإصدار</string>
+    <string name="settings_latest_version_installed">تم تثبيت أحدث إصدار.</string>
+    <string name="settings_update_button">تحديث</string>
+    <string name="terms_of_service">شروط الخدمة</string>
+    <string name="settings_privacy_policy">سياسة الخصوصية</string>
+    <string name="open_source_libraries">فتح تراخيص المصدر</string>
+    <string name="change_language_title">اللغة</string>
+    <string name="default_language_summary">العربية</string>
+    <string name="default_language">الإفتراضي</string>
+    <string name="change_theme_title">الثيم</string>
+    <string name="default_theme_summary">فاتح</string>
+    <string name="light">فاتح</string>
+    <string name="dark">داكن</string>
+    <string name="my_bugs">إستفساراتي</string>
+    <string name="my_suggestions">إقتراحاتي</string>
+    <string name="your_q">استفسارك…</string>
+    <string name="your_sug">اقتراحك…</string>
+    <string name="copy">نسخ</string>
+
+    <string name="message">رسالة</string>
+    <string name="feeds_tab">الاخبار</string>
+    <string name="apps_tab">التطبيقات</string>
+    <string name="community_tab">المجتمع</string>
+
+    <string name="suggest_fab">إقتراح</string>
+    <string name="ask_fab">استفسار</string>
+    <string name="report_fab">إبلاغ</string>
+
+    <string name="addFeed_upload_media_title">الوسائط</string>
+    <string name="addFeed_upload_media_title_ar">الوسائط-عربي</string>
+    <string name="addFeed_title">العنوان</string>
+    <string name="addFeed_summery">الشرح</string>
+    <string name="addFeed_tag">وسم</string>
+    <string name="addFeed_upload">اختيار</string>
+    <string name="addFeed_post">نشر</string>
+    <string name="explain_with_pics">توضيح اكثر</string>
+    <string name="email_address">البريد الإلكتروني</string>
+    <string name="password">كلمة المرور</string>
+    <string name="dont_have_account">ليس لديك حساب؟ <font color='#FFBB86FC'><b> سجل الآن.</b></font></string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="nickname">الاسم</string>
+    <string name="register">تسجيل</string>
+    <string name="re_password">تاكيد كلمة السر</string>
+    <string name="password_not_match">كلمة السر غير متطابقة</string>
+    <string name="logout">تسجيل الخروج</string>
+
+
+</resources>

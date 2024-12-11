@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?android:selectableItemBackground"
+        android:id="@+id/appsView">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="10.0dip"
+        android:layout_marginTop="2.0dip"
+        android:layout_marginEnd="10.0dip"
+        android:layout_marginBottom="4.0dip"
+        card_view:cardCornerRadius="5.0dip"
+        card_view:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/list_background"
+            android:minHeight="88.0dip"
+            android:paddingBottom="10dp">
+
+            <RelativeLayout
+                android:id="@+id/appBorder"
+                android:layout_width="90.0dip"
+                android:layout_height="90.0dip">
+
+                <ImageView
+                    android:id="@+id/app_icon"
+                    android:layout_width="90.0dip"
+                    android:layout_height="90.0dip"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/emptyText"
+                    android:gravity="center"
+                    android:padding="20.0dip"
+                    android:src="@drawable/icon" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/app_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/appBorder"
+                android:ellipsize="end"
+                android:paddingStart="10.0dip"
+                android:paddingEnd="0dip"
+                android:singleLine="true"
+                android:text="GBWhatsApp"
+                style="@style/ListItemTitle" />
+
+            <TextView
+                android:id="@+id/package_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/app_name"
+                android:layout_marginTop="3dp"
+                android:layout_toEndOf="@id/appBorder"
+                android:layout_toRightOf="@id/appBorder"
+                android:ellipsize="end"
+                android:maxLength="23"
+                android:paddingStart="10.0dip"
+                android:paddingEnd="0dip"
+                android:singleLine="true"
+                android:text="com.gbwhatsapp"
+                style="@style/ListItemSubtitle" />
+
+            <TextView
+                android:id="@+id/version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/package_name"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@id/appBorder"
+                android:ellipsize="end"
+                android:padding="2dp"
+                android:singleLine="true"
+                android:text="v1"
+                style="@style/ListItemTitle"
+                android:textSize="@dimen/conversation_date_size" />
+
+            <TextView
+                android:id="@+id/list_frequency_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/version"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:ellipsize="end"
+                android:paddingStart="0dip"
+                android:paddingEnd="10.0dip"
+                android:singleLine="true"
+                android:text="@string/app_name"
+                style="@style/ListItemSubtitle"
+                android:textSize="@dimen/conversation_date_size" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</RelativeLayout>

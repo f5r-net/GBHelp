@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    android:key="app_settings"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.gb.gbhelp.preference.GBListPreference
+        android:defaultValue="0"
+        android:entries="@array/language_array"
+        android:entryValues="@array/language_values"
+        android:key="language_key"
+        android:summary="@string/default_language_summary"
+        android:title="@string/change_language_title" />
+    <com.gb.gbhelp.preference.GBPreference
+        android:key="help_key"
+        android:title="@string/about_title" />
+    <com.gb.gbhelp.preference.GBPreference
+        android:key="logout_key"
+        android:title="@string/logout" />
+
+    <!--
+    <com.gb.gbhelp.preference.GBListPreference
+        android:defaultValue="0"
+        android:entries="@array/theme_array"
+        android:entryValues="@array/theme_values"
+        android:key="app_theme_key"
+        android:summary="@string/default_theme_summary"
+        android:title="@string/change_theme_title" />-->
+
+</PreferenceScreen>

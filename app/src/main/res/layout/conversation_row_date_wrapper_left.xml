@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/date_wrapper"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom|center|right"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="6.0dip"
+    android:paddingRight="6.0dip">
+
+    <TextView
+        android:id="@+id/date"
+        style="@style/WA.TextAppearance.ConversationRowDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="1.0dip"
+        android:text="12:35"/>
+</LinearLayout>

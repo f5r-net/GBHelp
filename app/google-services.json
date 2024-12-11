@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "563511557988",
+    "project_id": "gbhelp-67c62",
+    "storage_bucket": "gbhelp-67c62.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:563511557988:android:b9e0dfa9ee316d7f258471",
+        "android_client_info": {
+          "package_name": "com.gb.gbhelp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "563511557988-pbjvoj1tj753luf7ppnchq9m3sj6jq13.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2SGyHdzBdse0nge-tjFNgA_uQpjDfDv0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "563511557988-pbjvoj1tj753luf7ppnchq9m3sj6jq13.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/list_background">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        style="@style/Widget.Material.AppBarLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff2f2f2">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsing_app_bar"
+            style="@style/SeslCollapsingToolbarLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/aboutScreenActionBar"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:title="@string/about_title">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/collapsing_toolbar"
+                style="@style/SeslToolbar"
+                android:layout_width="fill_parent"
+                android:layout_height="?actionBarSize"
+                android:layout_gravity="bottom"
+                android:title="@string/about_title"
+                app:layout_collapseMode="pin" />
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        app:layout_behavior="@string/sesl_appbar_scrolling_view_behavior">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <Space
+                android:id="@+id/space_top"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:id="@+id/tv_app_title"
+                style="@style/Settings.About.Text.AppName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/space_top"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <Space
+                android:id="@+id/space_bottom"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_opensource"
+                style="@style/Settings.About.Button.Tnc"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:text="@string/open_source_libraries"
+                app:layout_constraintBottom_toTopOf="@id/space_bottom"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:visibility="gone"
+                app:layout_constraintWidth_percent="@fraction/settings_about_button_width_percentage" />
+
+            <Button
+                android:id="@+id/tv_privacy_policy"
+                style="@style/Settings.About.Button.Update"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:focusable="true"
+                android:text="@string/settings_privacy_policy"
+                app:layout_constraintBottom_toTopOf="@id/tv_opensource"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintWidth_percent="@fraction/settings_about_button_width_percentage" />
+
+            <Button
+                android:id="@+id/tv_tnc"
+                style="@style/Settings.About.Button.Update"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:focusable="true"
+                android:text="@string/terms_of_service"
+                app:layout_constraintBottom_toTopOf="@id/tv_privacy_policy"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintWidth_percent="@fraction/settings_about_button_width_percentage" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_version_update"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="15dp"
+                app:layout_constraintBottom_toTopOf="@id/tv_tnc"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/version_layout"
+                app:layout_constraintVertical_bias="0.0">
+
+                <Button
+                    android:id="@+id/btn_update"
+                    style="@style/Settings.About.Button.Update"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:focusable="true"
+                    android:text="@string/settings_update_button"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_version_info2"
+                    app:layout_constraintWidth_percent="@fraction/settings_about_button_min_width" />
+
+                <TextView
+                    android:id="@+id/tv_version_info2"
+                    style="@style/Settings.About.Text.Version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="24dp"
+                    android:paddingEnd="24dp"
+                    android:text="@string/settings_latest_version_installed"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/version_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:importantForAccessibility="yes"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_app_title">
+
+                <TextView
+                    android:id="@+id/tv_version"
+                    style="@style/Settings.About.Text.Version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/about_version"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/tv_version_code"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:contentDescription="@string/emptyText"/>
+
+                <TextView
+                    android:id="@+id/tv_version_code"
+                    style="@style/Settings.About.Text.Version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/gbapp_version_number"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/tv_version"
+                    android:contentDescription="@string/emptyText"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,31 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="appbar_padding">16dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+
+
+
+    <dimen name="standard_12">12dp</dimen>
+    <dimen name="standard_23">23dp</dimen>
+    <dimen name="standard_55">55dp</dimen>
+    <dimen name="standard_100">100dp</dimen>
+    <dimen name="standard_145">145dp</dimen>
+
+    <dimen name="preview_img_fab_margin">16dp</dimen>
+    <dimen name="conversation_date_size">12.0sp</dimen>
+    <dimen name="info_screen_padding">16.0dip</dimen>
+    <dimen name="settings_divider_text_margin_top">12.0dp</dimen>
+    <dimen name="list_row_padding">14.0dip</dimen>
+    <dimen name="settings_icon_margin_end">22.0dip</dimen>
+    <dimen name="settings_row_horizontal_padding">24.0dip</dimen>
+    <dimen name="settings_list_padding_top">8.0dip</dimen>
+    <dimen name="fab_main_margin">16.0dip</dimen>
+    <dimen name="space_base">8.0dip</dimen>
+    <item type="dimen" name="conversation_row_inner_item_padding">@dimen/space_base</item>
+    <dimen name="conversation_text_row_tv">16.0sp</dimen>
+    <dimen name="space_tight">4.0dip</dimen>
+    <dimen name="space_xTight">2.0dip</dimen>
+    <dimen name="conversation_row_margin_large">40.0dip</dimen>
+</resources>

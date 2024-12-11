@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="@dimen/conversation_row_margin_large"
+    android:background="@drawable/balloon_incoming_normal"
+    android:gravity="center|left"
+    android:minHeight="30.0dip"
+    android:orientation="horizontal"
+    android:padding="7dp">
+
+
+    <FrameLayout
+        android:id="@+id/suspicious_link_indicator_holder"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="4.0dip"
+        android:paddingTop="4.0dip"
+        android:paddingRight="4.0dip"
+        android:visibility="gone" />
+
+
+    <TextView
+        android:id="@+id/message_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:paddingLeft="@dimen/conversation_row_inner_item_padding"
+        android:paddingTop="2.0dip"
+        android:paddingRight="@dimen/conversation_row_inner_item_padding"
+        android:paddingBottom="5.0dip"
+        android:textAppearance="@style/WA.TextAppearance.ConversationRowMessage" />
+    <include layout="@layout/conversation_row_date_wrapper_left" />
+</LinearLayout>

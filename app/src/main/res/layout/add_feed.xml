@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/list_background"
+        android:focusableInTouchMode="true"
+        android:onClick="hideKeyboard"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15.0dp"
+            android:layout_marginTop="15.0dp"
+            android:layout_marginEnd="15.0dp"
+            android:background="@color/list_background">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10.0dp"
+                    android:layout_marginTop="20.0dp"
+                    android:layout_marginEnd="10.0dp"
+                    android:ellipsize="end"
+                    android:text="@string/addFeed_title"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/titleEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/title"
+                    android:layout_marginStart="10.0dp"
+                    android:layout_marginEnd="10.0dp"
+                    android:autofillHints="txtName"
+                    android:inputType="textMultiLine"
+                    android:isScrollContainer="true"
+                    android:textColor="@color/editTextHint"
+                    android:textColorHint="@color/editTextHint"
+                    android:textSize="16.0sp"
+                    android:hint="@string/english"
+                    android:theme="@style/MyEditTextTheme" />
+
+                <EditText
+                    android:id="@+id/titleArEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/titleEt"
+                    android:layout_marginStart="10.0dp"
+                    android:layout_marginEnd="10.0dp"
+                    android:autofillHints="txtName"
+                    android:hint="@string/arabic"
+                    android:inputType="textMultiLine"
+                    android:isScrollContainer="true"
+                    android:textColor="@color/editTextHint"
+                    android:textColorHint="@color/editTextHint"
+                    android:textSize="16.0sp"
+                    android:theme="@style/MyEditTextTheme" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15.0dp"
+            android:layout_marginTop="15.0dp"
+            android:layout_marginEnd="15.0dp"
+            android:background="@color/list_background">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/add_schedule_message_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10.0dp"
+                    android:layout_marginTop="20.0dp"
+                    android:layout_marginEnd="10.0dp"
+                    android:text="@string/addFeed_summery"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/summeryEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:autofillHints="txtText"
+                    android:gravity="bottom"
+                    android:inputType="textMultiLine"
+                    android:textColor="@color/editTextHint"
+                    android:textColorHint="@color/editTextHint"
+                    android:hint="@string/english"
+                    android:textSize="16.0sp"
+                    android:theme="@style/MyEditTextTheme" />
+
+                <EditText
+                    android:id="@+id/summeryEtAr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:autofillHints="txtText"
+                    android:gravity="bottom"
+                    android:inputType="textMultiLine"
+                    android:textColor="@color/editTextHint"
+                    android:textColorHint="@color/editTextHint"
+                    android:hint="@string/arabic"
+                    android:textSize="16.0sp"
+                    android:theme="@style/MyEditTextTheme" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15.0dp"
+            android:layout_marginTop="15.0dp"
+            android:layout_marginEnd="15.0dp"
+            android:background="@color/list_background">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tagTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10.0dp"
+                    android:layout_marginTop="20.0dp"
+                    android:layout_marginEnd="10.0dp"
+                    android:text="@string/addFeed_tag"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/tagCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15.0dp"
+            android:layout_marginTop="15.0dp"
+            android:layout_marginEnd="15.0dp"
+            android:background="@color/list_background">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/add_schedule_date_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10.0dp"
+                    android:layout_marginTop="20.0dp"
+                    android:layout_marginEnd="10.0dp"
+                    android:ellipsize="end"
+                    android:text="@string/addFeed_upload_media_title"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/addMedia"
+                    android:orientation="vertical">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/feedsMediaList"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10.0dp"
+                        android:layout_marginEnd="10.0dp"
+                        android:orientation="horizontal"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        tools:listitem="@layout/add_feeds_media_row" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/addMedia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="10.0dp"
+                    android:layout_marginTop="20.0dp"
+                    android:layout_marginEnd="10.0dp"
+                    android:text="@string/addFeed_upload" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15.0dp"
+            android:layout_marginTop="15.0dp"
+            android:layout_marginEnd="15.0dp"
+            android:background="@color/list_background">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10.0dp"
+                    android:layout_marginTop="20.0dp"
+                    android:layout_marginEnd="10.0dp"
+                    android:ellipsize="end"
+                    android:text="@string/addFeed_upload_media_title_ar"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/addMediaAr"
+                    android:orientation="vertical">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/feedsMediaListAr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10.0dp"
+                        android:layout_marginEnd="10.0dp"
+                        android:orientation="horizontal"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        tools:listitem="@layout/add_feeds_media_row" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/addMediaAr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="10.0dp"
+                    android:layout_marginTop="20.0dp"
+                    android:layout_marginEnd="10.0dp"
+                    android:text="@string/addFeed_upload" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="4dp"
+            android:padding="15dp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/postFeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="4dp"
+            android:padding="15dp"
+            android:text="@string/addFeed_post" />
+    </LinearLayout>
+</ScrollView>

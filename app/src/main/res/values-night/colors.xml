@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="primary_surface">@color/paletteSurface</color>
+
+
+    <color name="list_item_sub_title">@color/paletteOnSurfaceSecondary</color>
+    <color name="list_item_title">@color/paletteOnSurfacePrimary</color>
+
+    <color name="primary_light">@color/palettePrimary</color>
+    <color name="primary_text">@color/paletteOnSurfacePrimary</color>
+    <color name="secondary_text">@color/paletteOnSurfaceSecondary</color>
+    <color name="hint_text">@color/paletteOnSurfaceSecondary</color>
+    <color name="inputCameraTint">@color/paletteOnSurfaceSecondary</color>
+    <color name="buttonPressOverlay">@color/paletteOnSurfaceOverlay</color>
+    <color name="primary">@color/paletteSurface_2dp</color>
+    <color name="settings_divider">@color/paletteOnSurfaceBorder</color>
+    <color name="homeActivityTabActive">@color/palettePrimary</color>
+    <color name="homeActivityTabInactive">@color/paletteOnSurfaceSecondary</color>
+    <color name="homeActivityTabIndicator">@color/palettePrimary</color>
+    <color name="settings_card">@color/paletteSurface</color>
+    <color name="summary">@color/paletteOnSurfaceSecondary</color>
+    <color name="disabled_text">@color/paletteOnSurfaceDisabled</color>
+    <color name="aboutScreenActionBar">@color/primary</color>
+    <color name="aboutScreenAppName">@color/paletteOnSurfacePrimary</color>
+    <color name="aboutScreenBackIcon">@color/white</color>
+    <color name="fabSecondaryRipple">@color/paletteOnSurfaceOverlay</color>
+    <color name="fab_trans_screen">#CC111B21</color>
+    <color name="conversation_row_date">@color/paletteOnSurfaceSecondary</color>
+    <color name="secondary_text_on_right_bubble">@color/wds_white_alpha_60</color>
+</resources>
